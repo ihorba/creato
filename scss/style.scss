@@ -196,7 +196,7 @@ textarea {
 			background-color:  #ffffff;
 			width: 40px;
 			height: 1px;
-			top: 32px;
+			top: 175px;
 			left: 0px;
 		}
 
@@ -348,6 +348,25 @@ textarea {
 		background-color:  #ef4836;
 		position: relative;
 
+		&:after {
+			content: "";
+			position: absolute;
+			background-color:  #ffffff;
+			width: 90px;
+			height: 1px;
+			top: 158px;
+			left: 480px;
+		}
+
+		&:before {
+			content: "“";
+			color:  #da3e2d;
+			position: absolute;
+			font: 800 180px/1 $body-font;
+			top: 110px;
+			left: 580px;
+		}
+
 
 		img {
 			display: block;
@@ -365,6 +384,9 @@ textarea {
 
 		blockquote {
 			font-style: italic;
+			z-index: 2;
+			position: relative;
+
 		}
 
 		cite {
@@ -426,6 +448,17 @@ textarea {
 		h3 {
 			margin: 0 0 10px;
 			font: 300 30px/1 $body-font;
+			position: relative;
+
+			&:before {
+				content: "";
+				position: absolute;
+				background-color:  #ffffff;
+				width: 90px;
+				height: 1px;
+				top: 12px;
+				left: -130px;
+			}
 		}
 	}
 	&__form {
