@@ -190,6 +190,16 @@ textarea {
 		position: relative;
 		z-index: 2;
 
+		&:before {
+			content: "";
+			position: absolute;
+			background-color:  #ffffff;
+			width: 40px;
+			height: 1px;
+			top: 32px;
+			left: 0px;
+		}
+
 		img {
 			position: absolute;
 			bottom: 82px;
@@ -326,7 +336,13 @@ textarea {
 }
 
 .ba-testimonial {
-	margin-top: 294px;
+	padding-top: 294px;
+	position: relative;
+
+	&__title {
+		right: 0;
+		top: 190px;
+	}
 
 	&__body {
 		background-color:  #ef4836;

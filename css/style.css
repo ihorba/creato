@@ -498,6 +498,14 @@ select {
     background-size: cover;
     position: relative;
     z-index: 2; }
+    .ba-about__body:before {
+      content: "";
+      position: absolute;
+      background-color: #ffffff;
+      width: 40px;
+      height: 1px;
+      top: 32px;
+      left: 0px; }
     .ba-about__body img {
       position: absolute;
       bottom: 82px;
@@ -584,7 +592,11 @@ select {
   width: 56.4%; }
 
 .ba-testimonial {
-  margin-top: 294px; }
+  padding-top: 294px;
+  position: relative; }
+  .ba-testimonial__title {
+    right: 0;
+    top: 190px; }
   .ba-testimonial__body {
     background-color: #ef4836;
     position: relative; }
