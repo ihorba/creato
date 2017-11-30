@@ -365,7 +365,7 @@ body, html {
   width: 10%; }
 
 body {
-  font: 300 16px/1.9 "Raleway", "Raleway", sans-serif;
+  font: 300 16px/1.9 "Raleway", sans-serif;
   color: #fff;
   background-color: #020407; }
 
@@ -393,7 +393,8 @@ button,
   color: #fff;
   text-decoration: none;
   background: none;
-  border: none; }
+  border: none;
+  letter-spacing: 0.04em; }
 
 input[type="submit"]:hover,
 input[type="button"]:hover,
@@ -417,26 +418,80 @@ select {
   background-size: cover; }
 
 .ba-header {
-  padding-top: 65px; }
-  .ba-header .ba-logo {
+  padding: 65px 0 15px;
+  position: fixed;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.88) 80%, transparent 100%, transparent 101%);
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.88) 80%, transparent 100%, transparent 101%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, rgba(0, 0, 0, 0.88)), color-stop(100%, transparent), color-stop(101%, transparent));
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.88) 80%, transparent 100%, transparent 101%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.88) 80%, transparent 100%, transparent 101%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0000000', endColorstr='#00000000',GradientType=0 );
+  z-index: 5;
+  left: 0;
+  right: 0;
+  top: 0; }
+
+.ba-logo {
+  display: inline-block;
+  float: left; }
+
+.ba-nav {
+  float: right;
+  padding-top: 5px; }
+
+.ba-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .ba-menu li {
+    padding: 0;
     display: inline-block;
-    float: left; }
-  .ba-header .ba-nav {
-    float: right; }
-    .ba-header .ba-nav .ba-menu {
-      margin: 0;
-      padding: 0;
-      list-style: none; }
-      .ba-header .ba-nav .ba-menu li {
-        padding: 0;
-        display: inline-block;
-        margin-left: 45px; }
-        .ba-header .ba-nav .ba-menu li a {
-          font: 600 14px/1.2 "Raleway", sans-serif;
-          color: #fff;
-          text-decoration: none; }
-          .ba-header .ba-nav .ba-menu li a:hover {
-            color: #ef4836; }
+    margin-left: 41px; }
+  .ba-menu a {
+    font: 600 14px/1.2 "Raleway", sans-serif;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.08em; }
+    .ba-menu a:hover {
+      color: #ef4836; }
+
+.ba-welcome {
+  padding-top: 305px;
+  background: -moz-linear-gradient(top, transparent 74%, rgba(0, 0, 0, 0.4) 90%, rgba(0, 0, 0, 0.65) 100%);
+  background: -webkit-linear-gradient(top, transparent 74%, rgba(0, 0, 0, 0.4) 90%, rgba(0, 0, 0, 0.65) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(74%, transparent), color-stop(90%, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.65)));
+  background: -o-linear-gradient(top, transparent 74%, rgba(0, 0, 0, 0.4) 90%, rgba(0, 0, 0, 0.65) 100%);
+  background: linear-gradient(to bottom, transparent 74%, rgba(0, 0, 0, 0.4) 90%, rgba(0, 0, 0, 0.65) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); }
+
+.ba-welcome__photo {
+  padding-top: 13px;
+  float: left;
+  width: 41%; }
+  .ba-welcome__photo img {
+    display: block; }
+
+.ba-photo__body {
+  position: relative; }
+
+.ba-play {
+  position: absolute;
+  border-radius: 50%;
+  border: 8px solid #ccc;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 2px 49px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 49px 0px rgba(0, 0, 0, 0.3);
+  width: 88px;
+  height: 88px;
+  padding: 25px 32px;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(45%, -50%);
+  -ms-transform: translate(45%, -50%);
+  transform: translate(45%, -50%); }
+
+.ba-play:hover {
+  opacity: 0.5; }
 
 .ba-section-title {
   font: 800 128px/1 "Raleway", sans-serif;
@@ -444,50 +499,29 @@ select {
   position: absolute;
   margin: 0; }
 
-.ba-welcome {
-  padding-top: 205px; }
-
-.ba-welcome__photo {
-  position: relative;
-  padding-top: 15px; }
-  .ba-welcome__photo img {
-    display: block; }
-  .ba-welcome__photo .ba-play {
-    position: absolute;
-    border-radius: 50%;
-    border: 8px solid #ccc;
-    background-color: #ffffff;
-    -webkit-box-shadow: 0px 2px 49px 0px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 2px 49px 0px rgba(0, 0, 0, 0.3);
-    width: 88px;
-    height: 88px;
-    padding: 25px 32px;
-    top: 50%;
-    right: 50%;
-    -webkit-transform: translate(50%, -50%);
-    -ms-transform: translate(50%, -50%);
-    transform: translate(50%, -50%); }
-
 .ba-welcome__info {
-  padding: 0 120px 0 70px; }
-  .ba-welcome__info .ba-welcome__title {
-    margin: 0 0 40px;
-    font: 300 48px/1.38 "Raleway", sans-serif;
-    position: relative; }
-    .ba-welcome__info .ba-welcome__title:before {
-      content: "";
-      position: absolute;
-      background-color: #ffffff;
-      width: 90px;
-      height: 1px;
-      top: 32px;
-      left: -140px; }
+  padding: 0 90px 0 89px;
+  float: right;
+  width: 59%; }
   .ba-welcome__info p {
     font-weight: 200;
     line-height: 2;
-    margin: 0 0 30px; }
-  .ba-welcome__info a svg {
-    vertical-align: bottom; }
+    margin: 0 0 30px;
+    letter-spacing: 0.08em; }
+
+.ba-welcome__title {
+  margin: 0 0 23px;
+  font: 300 48px/1.38 "Raleway", sans-serif;
+  letter-spacing: 0.04em;
+  position: relative; }
+  .ba-welcome__title:before {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    width: 90px;
+    height: 1px;
+    top: 34px;
+    left: -133px; }
 
 .ba-about {
   padding-top: 204px;
@@ -503,60 +537,70 @@ select {
       content: "";
       position: absolute;
       background-color: #ffffff;
-      width: 40px;
+      width: 37px;
       height: 1px;
-      top: 175px;
+      top: 156px;
       left: 0px; }
     .ba-about__body img {
       position: absolute;
-      bottom: 82px;
+      bottom: 80px;
       right: 84px; }
   .ba-about__info {
     max-width: 50%;
-    padding: 145px 65px 150px; }
+    padding: 125px 40px 144px 65px; }
+
+.ba-button--about {
+  margin-top: 22px; }
 
 .ba-services {
-  padding: 180px 0;
+  padding: 180px 0 100px;
   position: relative; }
   .ba-services__title {
     top: 100px;
     right: -80px; }
-  .ba-services .ba-service__title {
-    padding-left: 55px;
-    margin: 0 0 35px;
-    font: 300 24px/1.2 "Raleway", sans-serif;
-    letter-spacing: 0.06em; }
-  .ba-services .ba-service__title--creative {
-    background: url(../img/icon-creative.png) no-repeat; }
-  .ba-services .ba-service__title--professional {
-    background: url(../img/icon-professional.png) no-repeat; }
-  .ba-services .ba-service__title--money {
-    background: url(../img/icon-money.png) no-repeat; }
   .ba-services__text {
-    max-width: 80%;
+    max-width: 85%;
     font: 200 14px/2.15 "Raleway", sans-serif;
-    margin-bottom: 25px; }
+    margin-bottom: 19px;
+    letter-spacing: 0.06em; }
+
+.ba-service__title {
+  padding-left: 57px;
+  margin: 0 0 27px;
+  font: 300 24px/1.2 "Raleway", sans-serif;
+  letter-spacing: 0.06em; }
+
+.ba-service__title--creative {
+  background: url(../img/icon-creative.png) no-repeat; }
+
+.ba-service__title--professional {
+  background: url(../img/icon-professional.png) no-repeat; }
+
+.ba-service__title--money {
+  background: url(../img/icon-money.png) no-repeat; }
 
 .ba-portfolio {
-  position: relative; }
+  position: relative;
+  padding-top: 60px; }
   .ba-portfolio__title {
     left: 100px;
-    top: -45px; }
+    top: 10px; }
   .ba-portfolio__menu {
     padding: 0;
-    margin: 0 0 25px;
+    margin: 0 0 22px;
     list-style: none;
     text-align: right; }
     .ba-portfolio__menu li {
       padding: 0;
       display: inline-block;
-      margin-left: 35px; }
-      .ba-portfolio__menu li a {
-        color: #595959;
-        text-decoration: none;
-        font: 500 14px/1 "Raleway", sans-serif; }
-        .ba-portfolio__menu li a:hover {
-          color: #FFF; }
+      margin-left: 37px; }
+    .ba-portfolio__menu a {
+      color: #595959;
+      text-decoration: none;
+      font: 500 14px/1 "Raleway", sans-serif;
+      letter-spacing: 0.06em; }
+      .ba-portfolio__menu a:hover {
+        color: #FFF; }
   .ba-portfolio__gallery {
     z-index: 2;
     position: relative; }
@@ -593,7 +637,7 @@ select {
   width: 56.4%; }
 
 .ba-testimonial {
-  padding-top: 294px;
+  padding-top: 291px;
   position: relative; }
   .ba-testimonial__title {
     right: 0;
@@ -607,13 +651,13 @@ select {
       background-color: #ffffff;
       width: 90px;
       height: 1px;
-      top: 158px;
-      left: 480px; }
+      top: 152px;
+      left: 475px; }
     .ba-testimonial__body:before {
       content: "“";
       color: #da3e2d;
       position: absolute;
-      font: 800 180px/1 "Raleway", sans-serif;
+      font: 800 150px/1 "Raleway", sans-serif;
       top: 110px;
       left: 580px; }
     .ba-testimonial__body img {
@@ -622,9 +666,9 @@ select {
       top: -50px;
       left: 84px; }
   .ba-testimonial__info {
-    max-width: 50%;
-    padding: 128px 0;
-    margin-left: auto; }
+    width: 51%;
+    padding: 123px 5px 124px;
+    float: right; }
     .ba-testimonial__info blockquote {
       font-style: italic;
       z-index: 2;
@@ -632,119 +676,144 @@ select {
     .ba-testimonial__info cite {
       font-weight: 700;
       font-style: normal; }
-  .ba-testimonial .ba-clients {
-    margin-top: 150px;
-    text-align: center; }
-    .ba-testimonial .ba-clients a {
-      display: block;
-      -webkit-transition: all 0.5s ease-out;
-      -o-transition: all 0.5s ease-out;
-      transition: all 0.5s ease-out; }
-    .ba-testimonial .ba-clients a:hover {
-      -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-      transform: scale(1.1); }
+
+.ba-clients {
+  margin-top: 140px;
+  padding: 0 24px 0 18px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .ba-clients a {
+    display: inline-block;
+    -webkit-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    border-bottom: 2px solid transparent;
+    padding: 10px; }
+    .ba-clients a:hover {
+      border-bottom: 2px solid #36383a; }
+    .ba-clients a img {
+      display: block; }
 
 .ba-contact {
-  padding-top: 105px; }
+  padding-top: 85px; }
   .ba-contact__body {
     background-color: #131313; }
   .ba-contact__info {
     background: #316ec0 url(../img/bg3.jpg) no-repeat;
     padding: 75px 80px 65px;
-    font-size: 14px; }
+    font-size: 14px;
+    width: 40.1%;
+    float: left; }
     .ba-contact__info h4 {
       font: 700 20px/1.3 "Raleway", sans-serif;
-      margin: 0 0 8px; }
+      margin: 0 0 6px; }
     .ba-contact__info a {
       text-decoration: none;
-      font: 300 14px/1.3 "Raleway", sans-serif;
+      font: 300 16px/1.3 "Raleway", sans-serif;
       color: #fff; }
       .ba-contact__info a:hover {
         opacity: 0.6; }
   .ba-contact__info-row + .ba-contact__info-row {
-    margin-top: 25px; }
+    margin-top: 29px; }
   .ba-contact__form-body {
-    padding: 45px 0 0 30px; }
+    padding: 50px 0 0 30px;
+    float: left;
+    width: 50%;
+    margin-left: 30px; }
     .ba-contact__form-body h3 {
-      margin: 0 0 10px;
+      margin: 0 0 17px;
       font: 300 30px/1 "Raleway", sans-serif;
-      position: relative; }
+      position: relative;
+      letter-spacing: 0.06em; }
       .ba-contact__form-body h3:before {
         content: "";
         position: absolute;
         background-color: #ffffff;
         width: 90px;
         height: 1px;
-        top: 12px;
-        left: -130px; }
+        top: 15px;
+        left: -128px; }
   .ba-contact__form {
     max-width: 394px; }
-    .ba-contact__form .ba-contact-form__row {
-      display: block;
-      width: 100%;
-      height: 50px;
-      border: none;
-      border-bottom: 1px solid #525252;
-      background: none;
-      line-height: 50px;
-      padding-left: 15px;
-      color: #2866bd;
-      margin-bottom: 5px; }
-      .ba-contact__form .ba-contact-form__row:focus {
-        outline: none;
-        border-bottom: 1px solid #2866bd; }
-        .ba-contact__form .ba-contact-form__row:focus::-webkit-input-placeholder {
-          color: #2866bd; }
-        .ba-contact__form .ba-contact-form__row:focus:-ms-input-placeholder {
-          color: #2866bd; }
-        .ba-contact__form .ba-contact-form__row:focus::placeholder {
-          color: #2866bd; }
-    .ba-contact__form .ba-contact-form__row--textarea {
-      width: 100%;
-      border: none;
-      border-bottom: 1px solid #525252;
-      background: none;
-      padding-left: 15px;
-      line-height: 50px;
-      color: #2866bd;
-      resize: none;
-      margin-bottom: 20px; }
-      .ba-contact__form .ba-contact-form__row--textarea:focus {
-        outline: none;
-        border-bottom: 1px solid #2866bd; }
-        .ba-contact__form .ba-contact-form__row--textarea:focus::-webkit-input-placeholder {
-          color: #2866bd; }
-        .ba-contact__form .ba-contact-form__row--textarea:focus:-ms-input-placeholder {
-          color: #2866bd; }
-        .ba-contact__form .ba-contact-form__row--textarea:focus::placeholder {
-          color: #2866bd; }
+
+.ba-contact-form__row--textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #525252;
+  background: none;
+  padding-left: 10px;
+  line-height: 50px;
+  color: #2866bd;
+  resize: none;
+  margin-bottom: 27px; }
+  .ba-contact-form__row--textarea:focus {
+    outline: none;
+    border-bottom: 1px solid #2866bd; }
+    .ba-contact-form__row--textarea:focus::-webkit-input-placeholder {
+      color: #2866bd; }
+    .ba-contact-form__row--textarea:focus:-ms-input-placeholder {
+      color: #2866bd; }
+    .ba-contact-form__row--textarea:focus::placeholder {
+      color: #2866bd; }
+
+.ba-contact-form__row {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid #525252;
+  background: none;
+  line-height: 50px;
+  padding-left: 10px;
+  color: #2866bd;
+  margin-bottom: 5px; }
+  .ba-contact-form__row:focus {
+    outline: none;
+    border-bottom: 1px solid #2866bd; }
+    .ba-contact-form__row:focus::-webkit-input-placeholder {
+      color: #2866bd; }
+    .ba-contact-form__row:focus:-ms-input-placeholder {
+      color: #2866bd; }
+    .ba-contact-form__row:focus::placeholder {
+      color: #2866bd; }
 
 .ba-footer {
   padding: 50px 0; }
-  .ba-footer .ba-copyright {
-    float: left;
-    color: #565656;
-    font: 200 14px/1.2 "Raleway", sans-serif; }
-    .ba-footer .ba-copyright span {
-      display: inline-block;
-      margin-left: 17px; }
-    .ba-footer .ba-copyright img {
-      display: inline-block;
-      vertical-align: middle; }
-  .ba-footer .ba-socials {
-    float: right;
-    margin: 0;
-    padding: 0;
-    list-style: none; }
-    .ba-footer .ba-socials a {
-      color: #fff; }
-      .ba-footer .ba-socials a:hover {
-        color: #316EC0; }
-    .ba-footer .ba-socials svg {
-      fill: currentColor; }
-    .ba-footer .ba-socials li {
-      display: inline-block;
-      margin-left: 15px; }
+
+.ba-copyright {
+  float: left;
+  color: #565656;
+  font: 200 14px/1.2 "Raleway", sans-serif; }
+  .ba-copyright span {
+    display: inline-block;
+    margin-left: 17px; }
+  .ba-copyright img {
+    display: inline-block;
+    vertical-align: middle; }
+
+.ba-socials {
+  float: right;
+  margin: 0;
+  padding: 14px 0 0;
+  list-style: none; }
+  .ba-socials a {
+    color: #fff; }
+    .ba-socials a:hover {
+      color: #316EC0; }
+  .ba-socials svg {
+    fill: currentColor; }
+  .ba-socials li {
+    display: inline-block;
+    margin-left: 11px; }
 
 /*# sourceMappingURL=style.css.map */
