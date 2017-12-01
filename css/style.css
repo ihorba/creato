@@ -455,6 +455,81 @@ select {
     .ba-menu a:hover {
       color: #ef4836; }
 
+.ba-menu-toggle {
+  padding: 0;
+  line-height: 1;
+  min-height: auto;
+  display: none;
+  background: none; }
+  .ba-menu-toggle svg {
+    fill: currentColor; }
+  .ba-menu-toggle:hover, .ba-menu-toggle:focus, .ba-menu-toggle:active {
+    background: none;
+    color: #58a0ff;
+    outline-style: none; }
+
+.ba-overlay {
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.3);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s ease-out, visibility .3s ease-out;
+  -o-transition: opacity .3s ease-out, visibility .3s ease-out;
+  transition: opacity .3s ease-out, visibility .3s ease-out; }
+
+@media (max-width: 960px) {
+  .ba-wrap {
+    -webkit-transition: left .3s ease-out;
+    -o-transition: left .3s ease-out;
+    transition: left .3s ease-out;
+    position: relative;
+    left: 0; }
+  .ba-menu {
+    position: fixed;
+    background: #152233;
+    z-index: 10;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    padding-top: 30px;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: -webkit-transform .3s ease-out;
+    transition: -webkit-transform .3s ease-out;
+    -o-transition: transform .3s ease-out;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out, -webkit-transform .3s ease-out; }
+    .ba-menu.ba-menu-open {
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0); }
+    .ba-menu li {
+      padding: 20px 20px 20px 30px;
+      display: block;
+      margin: 0; }
+    .ba-menu a {
+      display: block;
+      font-size: 18px;
+      line-height: 1.2; }
+  .ba-menu-toggle {
+    display: inline-block; }
+  .ba-menu-open .ba-wrap {
+    left: -250px; }
+  .ba-menu-open .ba-overlay {
+    visibility: visible;
+    opacity: 1; }
+  .ba-menu-open .ba-menu {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0); } }
+
 .ba-welcome {
   padding-top: 305px;
   background: -moz-linear-gradient(top, transparent 74%, rgba(0, 0, 0, 0.4) 90%, rgba(0, 0, 0, 0.65) 100%);

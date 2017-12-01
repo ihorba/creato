@@ -13,267 +13,274 @@
 </head>
 <body>
 	<header class="ba-header">
-			<div class="ba-container cf">
-				<a href="#" class="ba-logo">
-					<img src="img/logo.png" alt="Creato">
-				</a>
-				<nav class="ba-nav">
-					<ul class="ba-menu">
-						<li><a href="#">WELCOME</a></li>
-						<li><a href="#about">ABOUT</a></li>
-						<li><a href="#services">SERVICES</a></li>
-						<li><a href="#portfolio">PORTFOLIO</a></li>
-						<li><a href="#testimonial">TESTIMONIAL</a></li>
-						<li><a href="#contact">CONTACT</a></li>
-					</ul>
-				</nav>
-			</div>
+		<div class="ba-container cf">
+			<a href="#" class="ba-logo">
+				<img src="img/logo.png" alt="Creato">
+			</a>
+			<nav class="ba-nav">
+				<button class="ba-menu-toggle">
+					<svg width="32" height="32">
+						<use xlink:href="#burger"/>
+					</svg>
+				</button>
+				<ul class="ba-menu">
+					<li><a href="#">WELCOME</a></li>
+					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#services">SERVICES</a></li>
+					<li><a href="#portfolio">PORTFOLIO</a></li>
+					<li><a href="#testimonial">TESTIMONIAL</a></li>
+					<li><a href="#contact">CONTACT</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
-	<!-- BEGIN ba-intro  -->
-	<div class="ba-intro">
+	<div class="ba-wrap">
+		<div class="ba-overlay"></div>
+		<!-- BEGIN ba-intro  -->
+		<div class="ba-intro">
+			<!-- BEGIN ba-container  -->
+			<div class="ba-container">
+				<section class="ba-welcome cf">
+					<div class="ba-welcome__photo">
+						<div class="ba-photo__body">
+							<img src="img/photographer.jpg" alt="Photographer">
+							<a href="#" class="ba-play">
+								<svg width="13px" height="21px">
+									<path fill-rule="evenodd"  fill="rgb(239, 72, 54)"
+									d="M12.999,10.499 L0.001,0.002 L0.001,20.997 L12.999,10.499 "/>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="ba-welcome__info">
+						<h1 class="ba-welcome__title">CREATIVITY<br>COMES FIRST</h1>
+						<p>Thinking about overseas adventure travel? Have you put any
+						thought into the best places to go when it comes.</p>
+						<a href="#" class="ba-button">Discover more ➜</a>
+					</div>
+				</section>
+			</div>
+		</div>
+		<!-- END ba-intro -->
 		<!-- BEGIN ba-container  -->
 		<div class="ba-container">
-			<section class="ba-welcome cf">
-				<div class="ba-welcome__photo">
-					<div class="ba-photo__body">
-						<img src="img/photographer.jpg" alt="Photographer">
-						<a href="#" class="ba-play">
-							<svg width="13px" height="21px">
-								<path fill-rule="evenodd"  fill="rgb(239, 72, 54)"
-								d="M12.999,10.499 L0.001,0.002 L0.001,20.997 L12.999,10.499 "/>
-							</svg>
-						</a>
+			<section class="ba-about" id="about">
+				<h2 class="ba-section-title ba-about__title">ABOUT</h2>
+				<!-- BEGIN ba-about__body  -->
+				<div class="ba-about__body">
+					<!-- BEGIN ba-about__info  -->
+					<div class="ba-about__info">
+						<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+							consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
+							et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+						duis dolore te feugait nulla facilisi.</p>
+
+						<a href="" class="ba-button ba-button--about">Read more ➜</a>
 					</div>
+					<!-- END ba-about__info -->
+					<img src="img/man-in-glasses.jpg" alt="Man in glasses">
+
 				</div>
-				<div class="ba-welcome__info">
-					<h1 class="ba-welcome__title">CREATIVITY<br>COMES FIRST</h1>
-					<p>Thinking about overseas adventure travel? Have you put any
-					thought into the best places to go when it comes.</p>
-					<a href="#" class="ba-button">Discover more ➜</a>
+				<!-- END ba-about__body -->
+			</section>
+			<section class="ba-services" id="services">
+				<h2 class="ba-section-title ba-services__title">SERVICES</h2>
+				<!-- BEGIN ba-grid  -->
+				<div class="ba-grid">
+					<!-- BEGIN ba-width-1-3  -->
+					<div class="ba-width-1-3">
+						<div class="ba-services__col">
+							<h3 class="ba-service__title ba-service__title--creative">Creative</h3>
+							<div class="ba-services__text">
+								<p>Mirum est notare quam littera gothica
+								nunc putamus parum claram.</p>
+							</div>
+							<a href="#" class="ba-button">Learn more ➜</a>
+						</div>
+					</div>
+					<!-- END ba-width-1-3 -->
+					<!-- BEGIN ba-width-1-3  -->
+					<div class="ba-width-1-3">
+						<div class="ba-services__col">
+							<h3 class="ba-service__title ba-service__title--professional">Professional</h3>
+							<div class="ba-services__text">
+								<p>Claritas est etiam processus dynamicus
+								sequitur mutationem consuetudium.</p>
+							</div>
+							<a href="#" class="ba-button">Learn more ➜</a>
+						</div>
+					</div>
+					<!-- END ba-width-1-3 -->
+					<!-- BEGIN ba-width-1-3  -->
+					<div class="ba-width-1-3">
+						<div class="ba-services__col">
+							<h3 class="ba-service__title ba-service__title--money">Money Saving</h3>
+							<div class="ba-services__text">
+								<p>Nam liber tempor cum soluta nobis eleifend
+								option congue nihil imperdiet doming.</p>
+							</div>
+							<a href="#" class="ba-button">Learn more ➜</a>
+						</div>
+					</div>
+					<!-- END ba-width-1-3 -->
 				</div>
+				<!-- END ba-grid -->
 			</section>
 		</div>
-	</div>
-	<!-- END ba-intro -->
-	<!-- BEGIN ba-container  -->
-	<div class="ba-container">
-		<section class="ba-about" id="about">
-			<h2 class="ba-section-title ba-about__title">ABOUT</h2>
-			<!-- BEGIN ba-about__body  -->
-			<div class="ba-about__body">
-				<!-- BEGIN ba-about__info  -->
-				<div class="ba-about__info">
-					<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-						consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
-						et iusto odio dignissim qui blandit praesent luptatum zzril delenit
-					duis dolore te feugait nulla facilisi.</p>
-
-					<a href="" class="ba-button ba-button--about">Read more ➜</a>
-				</div>
-				<!-- END ba-about__info -->
-				<img src="img/man-in-glasses.jpg" alt="Man in glasses">
-
-			</div>
-			<!-- END ba-about__body -->
-		</section>
-		<section class="ba-services" id="services">
-			<h2 class="ba-section-title ba-services__title">SERVICES</h2>
-			<!-- BEGIN ba-grid  -->
-			<div class="ba-grid">
-				<!-- BEGIN ba-width-1-3  -->
-				<div class="ba-width-1-3">
-					<div class="ba-services__col">
-						<h3 class="ba-service__title ba-service__title--creative">Creative</h3>
-						<div class="ba-services__text">
-							<p>Mirum est notare quam littera gothica
-							nunc putamus parum claram.</p>
-						</div>
-						<a href="#" class="ba-button">Learn more ➜</a>
-					</div>
-				</div>
-				<!-- END ba-width-1-3 -->
-				<!-- BEGIN ba-width-1-3  -->
-				<div class="ba-width-1-3">
-					<div class="ba-services__col">
-						<h3 class="ba-service__title ba-service__title--professional">Professional</h3>
-						<div class="ba-services__text">
-							<p>Claritas est etiam processus dynamicus
-							sequitur mutationem consuetudium.</p>
-						</div>
-						<a href="#" class="ba-button">Learn more ➜</a>
-					</div>
-				</div>
-				<!-- END ba-width-1-3 -->
-				<!-- BEGIN ba-width-1-3  -->
-				<div class="ba-width-1-3">
-					<div class="ba-services__col">
-						<h3 class="ba-service__title ba-service__title--money">Money Saving</h3>
-						<div class="ba-services__text">
-							<p>Nam liber tempor cum soluta nobis eleifend
-							option congue nihil imperdiet doming.</p>
-						</div>
-						<a href="#" class="ba-button">Learn more ➜</a>
-					</div>
-				</div>
-				<!-- END ba-width-1-3 -->
-			</div>
-			<!-- END ba-grid -->
-		</section>
-	</div>
-	<!-- END ba-container -->
-	<section class="ba-portfolio" id="portfolio">
-		<h2 class="ba-section-title ba-portfolio__title">WORKS</h2>
-		<!-- BEGIN ba-container  -->
-		<div class="ba-container">
-			<ul class="ba-portfolio__menu">
-				<li><a href="#">All</a></li>
-				<li><a href="#">Abstract</a></li>
-				<li><a href="#">Weeding</a></li>
-				<li><a href="#">Product</a></li>
-				<li><a href="#">Landscape</a></li>
-			</ul>
-		</div>
 		<!-- END ba-container -->
-		<div class="ba-portfolio__gallery">
-			<!-- BEGIN ba-grid  -->
-			<div class="ba-grid">
-				<div class="ba-width-30">
-					<img src="img/gallery-track.jpg" alt="Track">
-					<img src="img/gallery-window.jpg" alt="Window">
-				</div>
-				<div class="ba-width-70">
-					<div class="ba-grid">
-						<div class="ba-width-44"><img src="img/gallery-food.jpg" alt="Food"></div>
-						<div class="ba-width-56"><img src="img/gallery-cards.jpg" alt="Cards"></div>
-					</div>
-
-					<div class="ba-grid">
-						<div class="ba-width-56"><img src="img/gallery-keyboard.jpg" alt="Keyboard"></div>
-						<div class="ba-width-44"><img src="img/gallery-mount.jpg" alt="Mountains"></div>
-					</div>
-				</div>
+		<section class="ba-portfolio" id="portfolio">
+			<h2 class="ba-section-title ba-portfolio__title">WORKS</h2>
+			<!-- BEGIN ba-container  -->
+			<div class="ba-container">
+				<ul class="ba-portfolio__menu">
+					<li><a href="#">All</a></li>
+					<li><a href="#">Abstract</a></li>
+					<li><a href="#">Weeding</a></li>
+					<li><a href="#">Product</a></li>
+					<li><a href="#">Landscape</a></li>
+				</ul>
 			</div>
-			<!-- END ba-grid -->
-		</div>
-	</section>
-	<!-- BEGIN ba-container  -->
-	<div class="ba-container">
-		<section class="ba-testimonial" id="testimonial">
-			<h2 class="ba-section-title ba-testimonial__title">SPEECH</h2>
-			<div class="ba-testimonial__body">
+			<!-- END ba-container -->
+			<div class="ba-portfolio__gallery">
+				<!-- BEGIN ba-grid  -->
 				<div class="ba-grid">
-					<div class="ba-testimonial__info">
-						<blockquote>
-							<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-								molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
-								eros et accumsan et iusto odio dignissim qui blandit praesent zzril
-							delenit augue duis dolore te feugait nulla facilisi.</p>
-							<cite>David Ramon</cite>
-						</blockquote>
+					<div class="ba-width-30">
+						<img src="img/gallery-track.jpg" alt="Track">
+						<img src="img/gallery-window.jpg" alt="Window">
+					</div>
+					<div class="ba-width-70">
+						<div class="ba-grid">
+							<div class="ba-width-44"><img src="img/gallery-food.jpg" alt="Food"></div>
+							<div class="ba-width-56"><img src="img/gallery-cards.jpg" alt="Cards"></div>
+						</div>
+
+						<div class="ba-grid">
+							<div class="ba-width-56"><img src="img/gallery-keyboard.jpg" alt="Keyboard"></div>
+							<div class="ba-width-44"><img src="img/gallery-mount.jpg" alt="Mountains"></div>
+						</div>
 					</div>
 				</div>
-				<img src="img/cite-author.jpg" alt="Cite Author">
-			</div>
-
-			<div class="ba-clients">
-
-				<div class="ba-client"><a href="#"><img src="img/hipster.png" alt="Hipster"></a></div>
-				<div class="ba-client"><a href="#"><img src="img/miller.png" alt="Miller"></a></div>
-				<div class="ba-client"><a href="#"><img src="img/hipster.png" alt="Hipster"></a></div>
-				<div class="ba-client"><a href="#"><img src="img/miller.png" alt="Miller"></a></div>
-				<div class="ba-client"><a href="#"><img src="img/hipster.png" alt="Hipster"></a></div>
-				<div class="ba-client"><a href="#"><img src="img/miller.png" alt="Miller"></a></div>
+				<!-- END ba-grid -->
 			</div>
 		</section>
-		<section class="ba-contact" id="contact">
-			<div class="ba-contact__body cf">
-				<div class="ba-contact__info">
-					<div class="ba-contact__info-row">
-						<h4>Email</h4>
-						<a href="mailto:username@mail.com">username@mail.com</a>
+		<div class="ba-container">
+			<section class="ba-testimonial" id="testimonial">
+				<h2 class="ba-section-title ba-testimonial__title">SPEECH</h2>
+				<div class="ba-testimonial__body">
+					<div class="ba-grid">
+						<div class="ba-testimonial__info">
+							<blockquote>
+								<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+									molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+									eros et accumsan et iusto odio dignissim qui blandit praesent zzril
+								delenit augue duis dolore te feugait nulla facilisi.</p>
+								<cite>David Ramon</cite>
+							</blockquote>
+						</div>
 					</div>
-					<div class="ba-contact__info-row">
-						<h4>Phone</h4>
-						<a href="tel:+000-111-2222">+000-111-2222</a><br>
-						<a href="tel:+000-112-2322">+000-112-2322</a>
-					</div>
-					<div class="ba-contact__info-row">
-						<h4>Address</h4>
-						<span>27, Red view street,<br>
-						NY, USA</span>
-					</div>
+					<img src="img/cite-author.jpg" alt="Cite Author">
 				</div>
-				<div class="ba-contact__form-body">
-					<h3>Get In Touch</h3>
-					<form class="ba-contact__form">
-						<input class="ba-contact-form__row" type="text" name="user-name" required placeholder="Name">
-						<input  class="ba-contact-form__row" type="email" name="email" required placeholder="Email address">
-						<textarea  class="ba-contact-form__row--textarea" name="message" required placeholder="Message" rows="2"></textarea>
-						<button class="ba-button">Send Now ➜</button>
-					</form>
-				</div>
-			</div>
-		</section>
-		<footer class="ba-footer cf">
-			<div class="ba-copyright">
-				<img src="img/logo-footer.png" alt="Creato" class="ba-footer__logo">
-				<span>Copyright 2016, All Rights Reserved</span>
-			</div>
-			<ul class="ba-socials">
-				<li>
-					<a href="#">
-						<svg width="16px" height="16px">
-							<use xlink:href="#icon-facebook" />
-						</svg>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<svg width="16px" height="16px">
-							<use xlink:href="#icon-twitter" />
-						</svg>
-					</a>
-				</li>
 
-				<li>
-					<a href="#">
-						<svg width="16px" height="16px">
-							<use xlink:href="#icon-behance" />
-						</svg>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<svg width="16px" height="16px">
-							<use xlink:href="#icon-flickr3" />
-						</svg>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<svg width="16px" height="16px">
-							<use xlink:href="#icon-instagram" />
-						</svg>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<svg width="16px" height="16px">
-							<use xlink:href="#icon-dribbble" />
-						</svg>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<svg width="16px" height="16px">
-							<use xlink:href="#icon-pinterest" />
-						</svg>
-					</a>
-				</li>
-			</ul>
-		</footer>
+				<div class="ba-clients">
+
+					<div class="ba-client"><a href="#"><img src="img/hipster.png" alt="Hipster"></a></div>
+					<div class="ba-client"><a href="#"><img src="img/miller.png" alt="Miller"></a></div>
+					<div class="ba-client"><a href="#"><img src="img/hipster.png" alt="Hipster"></a></div>
+					<div class="ba-client"><a href="#"><img src="img/miller.png" alt="Miller"></a></div>
+					<div class="ba-client"><a href="#"><img src="img/hipster.png" alt="Hipster"></a></div>
+					<div class="ba-client"><a href="#"><img src="img/miller.png" alt="Miller"></a></div>
+				</div>
+			</section>
+			<section class="ba-contact" id="contact">
+				<div class="ba-contact__body cf">
+					<div class="ba-contact__info">
+						<div class="ba-contact__info-row">
+							<h4>Email</h4>
+							<a href="mailto:username@mail.com">username@mail.com</a>
+						</div>
+						<div class="ba-contact__info-row">
+							<h4>Phone</h4>
+							<a href="tel:+000-111-2222">+000-111-2222</a><br>
+							<a href="tel:+000-112-2322">+000-112-2322</a>
+						</div>
+						<div class="ba-contact__info-row">
+							<h4>Address</h4>
+							<span>27, Red view street,<br>
+							NY, USA</span>
+						</div>
+					</div>
+					<div class="ba-contact__form-body">
+						<h3>Get In Touch</h3>
+						<form class="ba-contact__form">
+							<input class="ba-contact-form__row" type="text" name="user-name" required placeholder="Name">
+							<input  class="ba-contact-form__row" type="email" name="email" required placeholder="Email address">
+							<textarea  class="ba-contact-form__row--textarea" name="message" required placeholder="Message" rows="2"></textarea>
+							<button class="ba-button">Send Now ➜</button>
+						</form>
+					</div>
+				</div>
+			</section>
+			<footer class="ba-footer cf">
+				<div class="ba-copyright">
+					<img src="img/logo-footer.png" alt="Creato" class="ba-footer__logo">
+					<span>Copyright 2016, All Rights Reserved</span>
+				</div>
+				<ul class="ba-socials">
+					<li>
+						<a href="#">
+							<svg width="16px" height="16px">
+								<use xlink:href="#icon-facebook" />
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<svg width="16px" height="16px">
+								<use xlink:href="#icon-twitter" />
+							</svg>
+						</a>
+					</li>
+
+					<li>
+						<a href="#">
+							<svg width="16px" height="16px">
+								<use xlink:href="#icon-behance" />
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<svg width="16px" height="16px">
+								<use xlink:href="#icon-flickr3" />
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<svg width="16px" height="16px">
+								<use xlink:href="#icon-instagram" />
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<svg width="16px" height="16px">
+								<use xlink:href="#icon-dribbble" />
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<svg width="16px" height="16px">
+								<use xlink:href="#icon-pinterest" />
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</footer>
+		</div>
+
 	</div>
-	<!-- END ba-container -->
 	<svg style="position: absolute; width: 0; height: 0; overflow: hidden;">
 		<defs>
 			<symbol id="icon-facebook" viewBox="0 0 32 32">
@@ -308,7 +315,12 @@
 				<title>pinterest</title>
 				<path d="M16 2.138c-7.656 0-13.863 6.206-13.863 13.863 0 5.875 3.656 10.887 8.813 12.906-0.119-1.094-0.231-2.781 0.050-3.975 0.25-1.081 1.625-6.887 1.625-6.887s-0.412-0.831-0.412-2.056c0-1.925 1.119-3.369 2.506-3.369 1.181 0 1.756 0.887 1.756 1.95 0 1.188-0.756 2.969-1.15 4.613-0.331 1.381 0.688 2.506 2.050 2.506 2.462 0 4.356-2.6 4.356-6.35 0-3.319-2.387-5.638-5.787-5.638-3.944 0-6.256 2.956-6.256 6.019 0 1.194 0.456 2.469 1.031 3.163 0.113 0.137 0.131 0.256 0.094 0.4-0.106 0.438-0.338 1.381-0.387 1.575-0.063 0.256-0.2 0.306-0.463 0.188-1.731-0.806-2.813-3.337-2.813-5.369 0-4.375 3.175-8.387 9.156-8.387 4.806 0 8.544 3.425 8.544 8.006 0 4.775-3.012 8.625-7.194 8.625-1.406 0-2.725-0.731-3.175-1.594 0 0-0.694 2.644-0.863 3.294-0.313 1.206-1.156 2.712-1.725 3.631 1.3 0.4 2.675 0.619 4.106 0.619 7.656 0 13.863-6.206 13.863-13.863 0-7.662-6.206-13.869-13.863-13.869z"></path>
 			</symbol>
+			<symbol id="burger" viewBox="0 0 32 32">
+				<title>burger</title>
+				<path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"></path>
+			</symbol>
 		</defs>
 	</svg>
+	<script src="js/main.js"></script>
 </body>
 </html>
