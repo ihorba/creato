@@ -156,13 +156,13 @@ textarea {
 	transition: opacity .3s ease-out, visibility .3s ease-out;
 }
 
-@media (max-width:$bp-large) {
-	.ba-wrap {
-		transition: left .3s ease-out;
-		position: relative;
-		left: 0;
-	}
+.ba-wrap {
+	transition: left .3s ease-out;
+	position: relative;
+	left: 0;
+}
 
+@media (max-width:$bp-large) {
 	.ba-menu {
 		position: fixed;
 		background: #152233;
@@ -209,20 +209,13 @@ textarea {
 			transform: translateX(0);
 		}
 	}
-
 }
 
 @media (min-width:$bp-large+1) {
-	.ba-menu-toggle {
-
-	}
 
 }
 
-
-
-
-
+// welcome section
 
 .ba-welcome {
 	padding-top: 305px;
@@ -234,12 +227,14 @@ textarea {
 
 .ba-welcome__photo {
 
+
 	padding-top: 13px;
 	float: left;
-	width: 41%;
+	width: 40.2%;
 
 	img {
 		display: block;
+		width: 100%;
 
 	}
 }
@@ -259,7 +254,7 @@ textarea {
 	padding: 25px 32px;
 	top: 50%;
 	right: 50%;
-	transform: translate(45%, -50%);
+	transform: translate(50%, -50%);
 }
 
 .ba-play:hover {
@@ -271,12 +266,21 @@ textarea {
 	color: rgba(255, 255, 255, 0.1);
 	position: absolute;
 	margin: 0;
+
+	@media (max-width:$bp-medium) {
+		font-size: 60px;
+	}
+
 }
 
 .ba-welcome__info {
 	padding: 0 90px 0 89px;
 	float: right;
 	width: 59%;
+
+	@media (max-width:$bp-large) {
+		padding: 0 30px;
+	}
 
 	p {
 		font-weight: 200;
@@ -293,6 +297,7 @@ textarea {
 	font: 300 48px/1.38 $body-font;
 	letter-spacing: 0.04em;
 	position: relative;
+	max-width: 400px;
 
 	&:before {
 		content: "";
@@ -302,8 +307,37 @@ textarea {
 		height: 1px;
 		top: 34px;
 		left: -133px;
+
+		@media (max-width:$bp-large) {
+			display: none;
+		}
 	}
 }
+
+@media (max-width:$bp-medium) {
+	.ba-welcome {
+		padding-top: 180px;
+	}
+
+	.ba-welcome__photo,
+	.ba-welcome__info {
+		float: none;
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+
+	.ba-welcome__info {
+		padding: 30px 0;
+	}
+
+	.ba-welcome__title {
+		max-width: none;
+	}
+}
+
+
+// about section
 
 .ba-about {
 	padding-top: 204px;
@@ -328,6 +362,11 @@ textarea {
 			height: 1px;
 			top: 156px;
 			left: 0px;
+
+			@media (max-width:$bp-medium) {
+				display: none;
+			}
+
 		}
 
 		img {
@@ -335,12 +374,27 @@ textarea {
 			bottom: 80px;
 			right: 84px;
 
+			@media (max-width:1280px) {
+				width: 40%;
+				right: 40px;
+			}
+
+			@media (max-width:$bp-medium) {
+				position: static;
+				width: 100%;
+			}
 		}
 	}
 
 	&__info {
-		max-width: 50%;
+		width: 50%;
 		padding: 125px 40px 144px 65px;
+
+		@media (max-width:$bp-large) {
+			padding: 60px;
+		}
+
+
 	}
 }
 
@@ -348,13 +402,40 @@ textarea {
 	margin-top: 22px;
 }
 
+@media (max-width:$bp-medium) {
+	.ba-about {
+		padding-top: 120px;
+
+		&__title {
+			top: 45px;
+		}
+
+		&__body {
+			padding: 30px 15px;
+		}
+
+		&__info {
+			float: none;
+			width: 100%;
+			padding: 0;
+			text-align: center;
+		}
+	}
+}
+
+// services section
+
 .ba-services {
 	padding: 180px 0 100px;
 	position: relative;
 
 	&__title {
 		top: 100px;
-		right: -80px;
+		right: 0px;
+
+		@media (max-width:$bp-small) {
+			font-size: 50px;
+		}
 	}
 
 
@@ -364,6 +445,10 @@ textarea {
 		font: 200 14px/2.15 $body-font;
 		margin-bottom: 19px;
 		letter-spacing: 0.06em;
+	}
+
+	@media (max-width:$bp-large) {
+		max-width: none;
 	}
 }
 
@@ -378,15 +463,35 @@ textarea {
 	background: url(../img/icon-creative.png) no-repeat;
 }
 
-
 .ba-service__title--professional {
 	background: url(../img/icon-professional.png) no-repeat;
 }
 
-
 .ba-service__title--money {
 	background: url(../img/icon-money.png) no-repeat;
 }
+
+@media (max-width:$bp-medium) {
+	.ba-services {
+		padding-bottom: 0;
+	}
+
+	.ba-width-1-3 {
+		float: none;
+		width: 100%;
+	}
+
+	.ba-services__text {
+		font-size: 20px;
+	}
+
+	.ba-services__col {
+		margin-bottom: 100px;
+		padding-left: 50px;
+	}
+}
+
+// portfolio section
 
 .ba-portfolio {
 	position: relative;
@@ -395,9 +500,7 @@ textarea {
 	&__title {
 		left: 100px;
 		top: 10px;
-
 	}
-
 
 	&__menu {
 		padding: 0;
@@ -405,11 +508,19 @@ textarea {
 		list-style: none;
 		text-align: right;
 
+		@media (max-width:$bp-small) {
+			text-align: center;
+		}
+
 		li {
 			padding: 0;
 			display: inline-block;
+		}
+
+		li + li {
 			margin-left: 37px;
 		}
+
 		a {
 			color:  #595959;
 			text-decoration: none;
@@ -420,7 +531,6 @@ textarea {
 				color: #FFF;
 			}
 		}
-
 	}
 
 	&__gallery {
@@ -433,27 +543,38 @@ textarea {
 			cursor: pointer;
 			transition: all 0.5s ease-out;
 
+			@media (max-width:$bp-medium) {
+				margin-bottom: 10px;
+			}
+
+
+
 			&:hover {
 				transform: scale(1.1);
+
+				@media (max-width:$bp-medium) {
+					transform: none;
+				}
 			}
 		}
 
-		img + img {
-			margin-top: 7px;
-		}
+		@media (min-width:$bp-medium+1) {
+			img + img {
+				margin-top: 7px;
+			}
 
-		.ba-grid + .ba-grid {
-			margin-top: 7px;
-		}
+			.ba-grid + .ba-grid {
+				margin-top: 7px;
+			}
 
-		.ba-grid > [class*=ba-width-] {
-			padding-left: 7px;
-		}
+			.ba-grid > [class*=ba-width-] {
+				padding-left: 7px;
+			}
 
-		.ba-grid {
-			margin-left: -7px;
+			.ba-grid {
+				margin-left: -7px;
+			}
 		}
-
 	}
 }
 
@@ -473,6 +594,23 @@ textarea {
 	width: 56.4%;
 }
 
+@media (max-width:$bp-medium) {
+	.ba-portfolio {
+		padding: 60px 15px 0;
+	}
+
+	.ba-portfolio [class^="ba-width-"] {
+		float: none;
+		width: 100%;
+	}
+
+	.ba-grid + .ba-grid {
+	    margin-top: 0;
+	}
+}
+
+// testimonial section
+
 .ba-testimonial {
 	padding-top: 291px;
 	position: relative;
@@ -486,61 +624,97 @@ textarea {
 		background-color:  #ef4836;
 		position: relative;
 
-		&:after {
-			content: "";
-			position: absolute;
-			background-color:  #ffffff;
-			width: 90px;
-			height: 1px;
-			top: 152px;
-			left: 475px;
-		}
-
-		&:before {
-			content: "“";
-			color:  #da3e2d;
-			position: absolute;
-			font: 800 150px/1 $body-font;
-			top: 110px;
-			left: 580px;
-		}
-
-
 		img {
 			display: block;
 			position: absolute;
 			top: -50px;
 			left: 84px;
+
+			@media (max-width:1280px) {
+				width: 40%;
+				left: 40px;
+			}
 		}
 
 	}
 
 	&__info {
-		width: 51%;
-		padding: 123px 5px 124px;
+		width: 50%;
+		padding: 123px 50px 140px 18px;
 		float: right;
-
-
-		blockquote {
-			font-style: italic;
-			z-index: 2;
-			position: relative;
-
-		}
 
 		cite {
 			font-weight: 700;
 			font-style: normal;
 		}
 	}
+}
+
+.ba-blockquote {
+	font-style: italic;
+	position: relative;
+
+	&:before {
+		content: "";
+		position: absolute;
+		background-color:  #ffffff;
+		width: 90px;
+		height: 1px;
+		top: 13px;
+		left: -127px;
+
+		@media (max-width:$bp-large) {
+			display: none;
+		}
+	}
+}
+
+@media (max-width:$bp-large) {
+	.ba-testimonial__info {
+		padding: 50px 50px 70px 18px;
+	}
+}
+
+@media (max-width:$bp-medium) {
+	.ba-testimonial {
+		padding-top: 100px;
+
+		&__body {
+			padding: 30px 15px;
+
+			img {
+				position: static;
+				width: 100%;
+			}
+		}
+
+		&__info {
+			float: none;
+			width: 100%;
+			padding: 0;
+			text-align: center;
+		}
+
+		&__title {
+			top: 50px;
+		}
+
+	}
+
 
 }
+
 .ba-clients {
 	margin-top: 140px;
-	padding: 0 24px 0 18px;
-	display:flex;
+	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
+	text-align: center;
+
+	@media (max-width:$bp-large) {
+		margin-top: 80px;
+	}
 
 	a {
 		display: inline-block;
@@ -556,8 +730,22 @@ textarea {
 			display: block;
 		}
 	}
+}
+
+.ba-client {
+	@media (max-width:$bp-large) {
+		width: 30%;
+	}
+
+	@media (max-width:$bp-small) {
+		width: 50%;
+	}
+
+
 
 }
+
+// contact section
 
 .ba-contact {
 	padding-top: 85px;
@@ -568,6 +756,7 @@ textarea {
 
 	&__info {
 		background: #316ec0 url(../img/bg3.jpg) no-repeat;
+		background-size: cover;
 		padding: 75px 80px 65px;
 		font-size: 14px;
 		width: 40.1%;
@@ -594,10 +783,14 @@ textarea {
 	}
 
 	&__form-body {
-		padding: 50px 0 0 30px;
+		padding: 50px 0 50px 30px;
 		float: left;
 		width: 50%;
 		margin-left: 30px;
+
+		@media (max-width:$bp-medium) {
+			padding: 50px 0;
+		}
 
 		h3 {
 			margin: 0 0 17px;
@@ -613,15 +806,17 @@ textarea {
 				height: 1px;
 				top: 15px;
 				left: -128px;
+
+				@media (max-width:$bp-large) {
+					display: none;
+				}
 			}
 		}
 	}
 	&__form {
 		max-width: 394px;
 	}
-
 }
-
 
 .ba-contact-form__row--textarea {
 	width: 100%;
@@ -641,7 +836,6 @@ textarea {
 		&::placeholder {
 			color:  #2866bd;
 		}
-
 	}
 }
 
@@ -666,10 +860,29 @@ textarea {
 		}
 	}
 }
+
+@media (max-width:$bp-medium) {
+	.ba-contact__info,
+	.ba-contact__form-body {
+		float: none;
+		width: 100%;
+	}
+
+	.ba-contact__form {
+		width: 80%;
+	}
+}
+
+// footer section
+
 .ba-footer {
-	padding: 50px 0;
+	padding: 45px 0;
 
 	&__logo {
+		@media (max-width:$bp-small) {
+			margin-bottom: 20px;
+		}
+
 	}
 }
 
@@ -678,6 +891,7 @@ textarea {
 	float: left;
 	color:  #565656;
 	font: 200 14px/1.2 $body-font;
+	letter-spacing: 0.06em;
 
 	span {
 
@@ -713,6 +927,23 @@ textarea {
 	li {
 		display: inline-block;
 		margin-left: 11px;
+	}
+
+}
+
+@media (max-width:$bp-medium) {
+	.ba-footer {
+		text-align: center;
+	}
+
+	.ba-copyright,
+	.ba-socials {
+		float: none;
+		width: 100%;
+	}
+
+	.ba-copyright {
+		margin-bottom: 20px;
 	}
 
 }
