@@ -787,10 +787,6 @@ textarea {
 		float: left;
 		width: 50%;
 
-		@media (max-width:$bp-medium) {
-			padding: 50px 0;
-		}
-
 		h3 {
 			margin: 0 0 17px;
 			font: 300 30px/1 $body-font;
@@ -812,6 +808,7 @@ textarea {
 			}
 		}
 	}
+
 	&__form {
 		max-width: 394px;
 	}

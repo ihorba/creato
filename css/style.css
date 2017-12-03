@@ -931,9 +931,6 @@ select {
     padding: 50px 0 50px 30px;
     float: left;
     width: 50%; }
-    @media (max-width: 768px) {
-      .ba-contact__form-body {
-        padding: 50px 0; } }
     .ba-contact__form-body h3 {
       margin: 0 0 17px;
       font: 300 30px/1 "Raleway", sans-serif;
